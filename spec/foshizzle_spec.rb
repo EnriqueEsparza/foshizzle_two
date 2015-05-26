@@ -5,5 +5,11 @@ describe("String#foshizzle") do
 
   it("will change s to z") do
     expect(("busy").foshizzle()).to(eq("buzy"))
-end
+  end
+
+  it("will not change capital letters to z") do
+    expect(("Stop").foshizzle()).to(eq("Stop"))
+  end
+
+
 end
